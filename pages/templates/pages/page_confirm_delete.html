@@ -10,8 +10,8 @@
         <div>
             <form action="" method="POST">
                 {% csrf_token %}
-                <p>¿Estás seguro de que quieres borrar "{{ object }}"?</p>
-                <input type="submit" value="Sí, borrar la página" />
+                <p>¿Estás seguro de que quieres borrar <b>"{{ object }}"</b>?</p>
+                <input type="submit" class="btn btn-primary btn-block" value="Sí, borrar la página" />
             </form>
         </div>
       </div>
