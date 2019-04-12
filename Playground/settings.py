@@ -6,6 +6,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
+    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -93,4 +94,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
+LOGIN_REDIRECT_URL = 'pages:pages'
+LOGOUT_REDIRECT_URL = 'home'
